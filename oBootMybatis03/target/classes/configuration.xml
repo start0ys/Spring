@@ -1,0 +1,10 @@
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "HTTP://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.oracle.oBootMybatis03.model.Emp" alias="Emp"/>
+		<typeAlias type="com.oracle.oBootMybatis03.model.Dept" alias="Dept"/>
+		<typeAlias type="com.oracle.oBootMybatis03.model.EmpDept" alias="EmpDept"/>
+		<typeAlias type="com.oracle.oBootMybatis03.model.DeptVO" alias="DeptVO"/>
+		<typeAlias type="com.oracle.oBootMybatis03.model.Member1" alias="Member1"/>
+	</typeAliases>
+</configuration>
