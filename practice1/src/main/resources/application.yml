@@ -1,0 +1,43 @@
+# http port set
+server:
+  port: 8586
+
+spring:
+  # File Size
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+             
+  # Oracle Connect
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/xe
+    username: scott5
+    password: tiger
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+
+  # gmail Transfer
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: rladbtjq18@gmail.com
+    password: tjql9478!
+    properties:
+      mail: 
+        smtp:
+          auth: true
+          starttls.enable: true    
+        
+  # view resolver(Template -> JSP Use)
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+      
+# Mybatis
+mybatis:
+  # dto Location
+  type-aliases-package: com.oracle.practice1.model
+  # xml Location
+  config-location: classpath:configuration.xml
+  mapper-locations: classpath:mappers/*.xml
